@@ -34,7 +34,7 @@ See a full run in [`samples/sample-report.md`](samples/sample-report.md): 22 fin
 ## Install and register in Claude Code
 
 ```bash
-git clone <this repo>
+git clone https://github.com/Alvi-808/content-qa-mcp.git
 cd content-qa-mcp
 npm install
 npm test        # 14 tests, includes a real MCP client/server handshake
