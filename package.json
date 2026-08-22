@@ -1,0 +1,31 @@
+{
+  "name": "content-qa-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for editorial content QA. Every finding comes with the fix attached.",
+  "type": "module",
+  "main": "src/server.js",
+  "bin": {
+    "content-qa-mcp": "src/server.js"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test \"test/*.test.js\"",
+    "sample": "node scripts/generate-sample.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "content-qa",
+    "editorial",
+    "seo",
+    "claude"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.24.0"
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "summary": {
+    "findings": 22,
+    "bySeverity": {
+      "high": 2,
+      "medium": 17,
+      "low": 3
+    },
+    "verdict": "NOT READY: high-severity findings block publish.",
+    "seoCheckRan": true
+  },
+  "metrics": {
+    "readability": {
+      "sentences": 5,
+      "words": 135,
+      "fleschKincaidGrade": 16.6,
+      "longSentences": 1,
+      "passiveSentences": 1
+    },
+    "aiTells": {
+      "stockPhraseHits": 11,
+      "emDashes": 3,
+      "arrows": 1,
+      "emoji": 1
+    },
+    "seo": {
+      "titleLength": 100,
+      "metaDescriptionLength": 0,
+      "h1Count": 2,
+      "h2Count": 0,
+      "images": 2,
+      "imagesMissingAlt": 2,
+      "links": 0,
+      "internalLinks": 0,
+      "bodyWords": 135,
+      "keyword": {
+        "keyword": "espresso descaling",
+        "occurrences": 0,
+        "densityPct": 0
+      }
+    }
+  },
+  "findings": [
+    {
+      "check": "seo-onpage",
+      "severity": "high",
+      "excerpt": null,
+      "finding": "No meta description.",
+      "fix": "Add a 120-155 character meta description that states the article's payoff and includes the keyword once."
+    },
+    {
+      "check": "seo-onpage",
+      "severity": "high",
+      "excerpt": null,
+      "finding": "Focus keyword \"espresso descaling\" never appears in the body.",
+      "fix": "Work the keyword into the first 100 words, one H2, and the conclusion, in natural phrasing."
+    },
+    {
+      "check": "readability",
+      "severity": "medium",
+      "excerpt": null,
+      "finding": "Flesch-Kincaid grade is 16.6; general web audiences read comfortably at grade 8-10.",
+      "fix": "Split long sentences and swap multi-syllable words for shorter ones until the grade lands under 12. Target the longest sentences first; they move the score fastest."
+    },
+    {
+      "check": "ai-tells",
+      "severity": "medium",
+      "excerpt": "Espresso Machine Descaling A Second Heading That Should Not Be an H1 In today's fast-pa...",
+      "finding": "Stock phrase \"delve into\" appears 1 time(s). Readers and editors pattern-match it to unedited AI output.",
+      "fix": "Replace it with the specific claim it is standing in for. If the sentence says nothing once the phrase is gone, cut the sentence."
+    },
+    {
+      "check": "ai-tells",
+      "severity": "medium",
+      "excerpt": "Espresso Machine Descaling A Second Heading That Should Not Be an H1 In today's fast-pa...",
+      "finding": "Stock phrase \"in today's fast-paced world\" appears 1 time(s). Readers and editors pattern-match it to unedited AI output.",
+      "fix": "Replace it with the specific claim it is standing in for. If the sentence says nothing once the phrase is gone, cut the sentence."
+    },
+    {
+      "check": "ai-tells",
+      "severity": "medium",
+      "excerpt": "It will unlock the power of your machine and seamlessly integrate into your routine → b...",
+      "finding": "Stock phrase \"unlock the power/potential\" appears 1 time(s). Readers and editors pattern-match it to unedited AI output.",
+      "fix": "Replace it with the specific claim it is standing in for. If the sentence says nothing once the phrase is gone, cut the sentence."
+    },
+    {
+      "check": "ai-tells",
+      "severity": "medium",
+      "excerpt": "Descaling is a game-changer.",
+      "finding": "Stock phrase \"game-changer\" appears 1 time(s). Readers and editors pattern-match it to unedited AI output.",
+      "fix": "Replace it with the specific claim it is standing in for. If the sentence says nothing once the phrase is gone, cut the sentence."
+    },
+    {
+      "check": "ai-tells",
+      "severity": "medium",
+      "excerpt": "It will unlock the power of your machine and seamlessly integrate into your routine → b...",
+      "finding": "Stock phrase \"seamlessly integrate\" appears 1 time(s). Readers and editors pattern-match it to unedited AI output.",
+      "fix": "Replace it with the specific claim it is standing in for. If the sentence says nothing once the phrase is gone, cut the sentence."
+    },
+    {
+      "check": "ai-tells",
+      "severity": "medium",
+      "excerpt": "Whether you're a home barista or a professional roaster, this robust solution will elev...",
+      "finding": "Stock phrase \"whether you're an X or a Y\" appears 1 time(s). Readers and editors pattern-match it to unedited AI output.",
+      "fix": "Replace it with the specific claim it is standing in for. If the sentence says nothing once the phrase is gone, cut the sentence."
+    },
+    {
+      "check": "ai-tells",
+      "severity": "medium",
+      "excerpt": "Whether you're a home barista or a professional roaster, this robust solution will elev...",
+      "finding": "Stock phrase \"elevate your\" appears 1 time(s). Readers and editors pattern-match it to unedited AI output.",
+      "fix": "Replace it with the specific claim it is standing in for. If the sentence says nothing once the phrase is gone, cut the sentence."
+    },
+    {
+      "check": "ai-tells",
+      "severity": "medium",
+      "excerpt": "Whether you're a home barista or a professional roaster, this robust solution will elev...",
+      "finding": "Stock phrase \"robust solution\" appears 1 time(s). Readers and editors pattern-match it to unedited AI output.",
+      "fix": "Replace it with the specific claim it is standing in for. If the sentence says nothing once the phrase is gone, cut the sentence."
+    },
+    {
+      "check": "ai-tells",
+      "severity": "medium",
+      "excerpt": "It's not just maintenance, but an investment in flavor.",
+      "finding": "Stock phrase \"not just X, but Y\" appears 1 time(s). Readers and editors pattern-match it to unedited AI output.",
+      "fix": "Replace it with the specific claim it is standing in for. If the sentence says nothing once the phrase is gone, cut the sentence."
+    },
+    {
+      "check": "ai-tells",
+      "severity": "medium",
+      "excerpt": "Whether you're a home barista or a professional roaster, this robust solution will elev...",
+      "finding": "Stock phrase \"in conclusion\" appears 1 time(s). Readers and editors pattern-match it to unedited AI output.",
+      "fix": "Replace it with the specific claim it is standing in for. If the sentence says nothing once the phrase is gone, cut the sentence."
+    },
+    {
+      "check": "ai-tells",
+      "severity": "medium",
+      "excerpt": "Whether you're a home barista or a professional roaster, this robust solution will elev...",
+      "finding": "Stock phrase \"look no further\" appears 1 time(s). Readers and editors pattern-match it to unedited AI output.",
+      "fix": "Replace it with the specific claim it is standing in for. If the sentence says nothing once the phrase is gone, cut the sentence."
+    },
+    {
+      "check": "ai-tells",
+      "severity": "medium",
+      "excerpt": null,
+      "finding": "3 em/en dashes in 135 words (22.2 per 1,000). Heavy dash use is a strong machine-writing tell.",
+      "fix": "Rewrite dash-spliced sentences with commas, colons, or two sentences. Keep dashes only where a deliberate interruption earns one."
+    },
+    {
+      "check": "seo-onpage",
+      "severity": "medium",
+      "excerpt": "The Ultimate Comprehensive Guide to Espresso Machine Descaling for Beginners and Professionals Alike",
+      "finding": "Title is 100 characters; search results truncate outside roughly 30-60.",
+      "fix": "Trim the title to under 60 characters; cut qualifiers, keep the keyword at the front."
+    },
+    {
+      "check": "seo-onpage",
+      "severity": "medium",
+      "excerpt": "A Second Heading That Should Not Be an H1",
+      "finding": "2 <h1> tags; an article should carry exactly one.",
+      "fix": "Keep the first <h1>, demote the rest to <h2>."
+    },
+    {
+      "check": "seo-onpage",
+      "severity": "medium",
+      "excerpt": "<img src=\"machine.jpg\">",
+      "finding": "2 of 2 images have no alt text.",
+      "fix": "Write alt text that describes the image content in one clause; name the keyword only where the image genuinely shows it."
+    },
+    {
+      "check": "seo-onpage",
+      "severity": "medium",
+      "excerpt": "The Ultimate Comprehensive Guide to Espresso Machine Descaling for Beginners and Professionals Alike",
+      "finding": "Focus keyword is missing from the title.",
+      "fix": "Move the keyword into the title, as close to the front as the phrasing allows."
+    },
+    {
+      "check": "readability",
+      "severity": "low",
+      "excerpt": "Espresso Machine Descaling A Second Heading That Should Not Be an H1 In today's fast-pa...",
+      "finding": "Sentence runs 82 words (threshold 28).",
+      "fix": "Break it at the conjunction or relative clause into two sentences; keep one idea per sentence."
+    },
+    {
+      "check": "ai-tells",
+      "severity": "low",
+      "excerpt": null,
+      "finding": "1 arrow glyph(s) in prose. Arrows belong in diagrams, not sentences.",
+      "fix": "Spell the relationship out: 'X leads to Y' or 'X becomes Y'."
+    },
+    {
+      "check": "ai-tells",
+      "severity": "low",
+      "excerpt": null,
+      "finding": "1 emoji in body prose.",
+      "fix": "Cut them from editorial copy; clients read emoji in articles as filler."
+    }
+  ]
+}
