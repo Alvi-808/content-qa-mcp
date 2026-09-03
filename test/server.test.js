@@ -27,6 +27,14 @@ test("MCP end-to-end: initialize, list tools, call a tool, list prompts", async 
       "seo_onpage_check",
     ]);
 
+    for (const tool of tools.tools) {
+      assert.deepEqual(
+        tool.annotations,
+        { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false },
+        `${tool.name} must declare all four tool annotations`
+      );
+    }
+
     const res = await client.callTool({
       name: "ai_tell_scan",
       arguments: { text: "In today's fast-paced world, we delve into espresso — deeply — and thoroughly." },

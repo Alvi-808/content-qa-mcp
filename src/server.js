@@ -16,12 +16,22 @@ const asText = (obj) => ({
   content: [{ type: "text", text: JSON.stringify(obj, null, 2) }],
 });
 
+// Every tool is a pure local analysis: it reads its input, writes nothing,
+// returns the same report for the same input, and never touches the network.
+const READ_ONLY_LOCAL = {
+  readOnlyHint: true,
+  destructiveHint: false,
+  idempotentHint: true,
+  openWorldHint: false,
+};
+
 server.registerTool(
   "qa_full_report",
   {
     title: "Full editorial QA report",
     description:
       "Run every check (readability, AI-writing tells, on-page SEO) on one article and return a single report. Every finding comes with the fix attached. Accepts raw HTML (preferred) or plain text; the SEO check only runs on HTML input.",
+    annotations: READ_ONLY_LOCAL,
     inputSchema: {
       input: z.string().describe("The article: raw HTML (preferred) or plain text"),
       focusKeyword: z.string().optional().describe("Primary keyword the article targets"),
@@ -36,6 +46,7 @@ server.registerTool(
     title: "Readability check",
     description:
       "Flesch-Kincaid grade, long-sentence and passive-voice findings for article prose. Plain text in; findings with fixes out.",
+    annotations: READ_ONLY_LOCAL,
     inputSchema: {
       text: z.string().describe("Article prose, plain text"),
     },
@@ -49,6 +60,7 @@ server.registerTool(
     title: "AI-writing tell scan",
     description:
       "Scan prose for machine-writing tells: stock phrases (delve into, in today's fast-paced world, ...), em/en-dash density, arrow glyphs, emoji. Findings with fixes.",
+    annotations: READ_ONLY_LOCAL,
     inputSchema: {
       text: z.string().describe("Article prose, plain text"),
     },
@@ -62,6 +74,7 @@ server.registerTool(
     title: "On-page SEO check",
     description:
       "Title, meta description, heading structure, image alt coverage, internal links, and keyword usage for one article's HTML. Built for well-formed CMS article output (WordPress, Ghost, static sites), not adversarial markup.",
+    annotations: READ_ONLY_LOCAL,
     inputSchema: {
       html: z.string().describe("The article page HTML"),
       focusKeyword: z.string().optional().describe("Primary keyword the article targets"),
