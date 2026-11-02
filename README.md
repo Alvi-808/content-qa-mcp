@@ -2,7 +2,7 @@
 
 An MCP (Model Context Protocol) server for editorial content QA. Point Claude at an article and get a findings report where **every finding comes with the fix attached**, so the report is usable instead of only correct.
 
-That findings-with-fixes contract is enforced by the test suite: a check that emits a finding without an actionable fix fails the suite.
+The test suite checks that contract on a deliberately broken sample article: every finding the article triggers must carry a non-empty fix. In the source, each of the 20 finding paths is paired with a fix.
 
 ## What it does
 
